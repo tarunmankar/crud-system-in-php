@@ -12,7 +12,7 @@
 </div>
 <div class="row d-flex justify-content-center mt-5">
   <div class="col-xl-6">
-		<form class="form-horizontal" action="<?php echo base_url().'index.php/users/update'?>" method="POST">
+		<form class="form-horizontal" method="POST">
 		  <fieldset>
 		    <div class="control-group">
 		      <label class="control-label"  for="name">Name</label>
@@ -32,7 +32,7 @@
 		 
 		    <div class="control-group ">
 		      <div class="controls">
-		        <input type="submit" name="submit" value="Update Data " class="btn btn-success">
+		        <input type="submit" name="submit" value="Update Data" class="btn btn-success">
 		      </div>
 		    </div>
 		  </fieldset>

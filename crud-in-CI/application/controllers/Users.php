@@ -50,7 +50,7 @@ class Users extends CI_Controller
             $created_at= date('y-m-d'); 
             $formArray=array('name' => $name, 'email'=> $email, 'created_at'=> $created_at);
             $this->load->model('User_model');
-            $this->User_model->create($formArray);
+            $this->User_model->update($id, $formArray);
             $this->session->set_flashdata('success','Record Updated Succesfully');
             redirect(base_url().'index.php/users');
         }
